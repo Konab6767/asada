@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SomDong</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Menu Button -->
+    <button id="menuBtn" class="menu-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+    </button>
+
+    <!-- Sidebar Menu -->
+    <div id="sidebar" class="sidebar">
+        <button id="closeBtn" class="close-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+        <div class="sidebar-content">
+            <a href="#" class="sidebar-item" data-section="home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                <span>Home</span>
+            </a>
+            <a href="#" class="sidebar-item" data-section="library">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                <span>Biblioteca</span>
+            </a>
+            <a href="#" class="sidebar-item" data-section="account">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                <span>Conta</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <header>
+            <h1>SomDong</h1>
+            <div class="search-container">
+                <input type="text" placeholder="Pesquisar mangás..." id="searchInput">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </div>
+        </header>
+
+        <!-- Featured Section -->
+        <section class="featured">
+            <h2>Destaques</h2>
+            <div class="featured-grid">
+                <div class="featured-item">
+                    <img src="https://source.unsplash.com/random/800x600?manga&1" alt="Manga 1">
+                    <div class="featured-info">
+                        <h3>One Piece</h3>
+                        <p>A grande aventura pirata continua com novos desafios e mistérios.</p>
+                    </div>
+                </div>
+                <div class="featured-item">
+                    <img src="https://source.unsplash.com/random/800x600?manga&2" alt="Manga 2">
+                    <div class="featured-info">
+                        <h3>Naruto</h3>
+                        <p>A jornada do jovem ninja para se tornar o mais forte de sua aldeia.</p>
+                    </div>
+                </div>
+                <div class="featured-item">
+                    <img src="https://source.unsplash.com/random/800x600?manga&3" alt="Manga 3">
+                    <div class="featured-info">
+                        <h3>Dragon Ball</h3>
+                        <p>As aventuras de Goku e seus amigos continuam com novas batalhas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Updates -->
+        <section class="latest-updates">
+            <h2>Últimas Atualizações</h2>
+            <div class="manga-grid">
+                <!-- Manga items will be added by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
